@@ -3,7 +3,7 @@ import Text from "./Text";
 
 export default function Benefits() {
   return (
-    <div className="bg-light grid grid-cols-3 gap-10 p-20">
+    <section id="benefits" className="bg-light grid grid-cols-3 gap-10 p-20">
       <div className="grid gap-3 text-center">
         <img
           src="src/assets/images/certified.png"
@@ -42,6 +42,6 @@ export default function Benefits() {
           des sommets.
         </Text>
       </div>
-    </div>
+    </section>
   );
 }

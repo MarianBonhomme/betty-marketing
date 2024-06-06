@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div className="max-w-screen font-bodoni text-dark">
       <Header />
-      <div className="pt-40">
+      <div className="pt-24">
         <Headline />
         <Benefits />
         <Companies />

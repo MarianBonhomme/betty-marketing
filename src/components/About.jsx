@@ -1,10 +1,12 @@
 import React from "react";
 import Text from "./Text";
 import Button from "./Button";
+import { socialLinks } from "../utils/SocialLinks";
+import ExternalLink from "./ExternalLink";
 
 export default function About() {
   return (
-    <div className="flex items-center justify-center gap-20 bg-black p-20 shadow-2xl">
+    <section id="about" className="flex items-center justify-center gap-20 bg-black p-20 shadow-2xl">
       <div className="flex h-[375px] w-[375px] items-center justify-center relative">
         <img src="src/assets/images/ornements-2.png" alt="ornements" className="absolute top-0 left-0 w-full h-full " />
         <div className="h-[250px] w-[200px] -rotate-3 bg-white pt-[15px]">
@@ -42,24 +44,37 @@ export default function About() {
             css={"bg-primary text-black font-bold text-sm"}
           />
           <ul className="flex items-center justify-end gap-5">
-            <img
-              src="src/assets/images/instagram-primary.svg"
-              alt="instagram"
-              className="h-6 w-6 cursor-pointer"
-            />
-            <img
-              src="src/assets/images/threads-primary.svg"
-              alt="threads"
-              className="h-6 w-6 cursor-pointer"
-            />
-            <img
-              src="src/assets/images/facebook-primary.svg"
-              alt="facebook"
-              className="h-6 w-6 cursor-pointer"
-            />
+            <ExternalLink url={socialLinks.instagram}>
+              <img
+                src="src/assets/images/instagram-primary.svg"
+                alt="Instagram"
+                className="h-6 w-6 cursor-pointer"
+              />
+            </ExternalLink>
+            <ExternalLink url={socialLinks.threads}>
+              <img
+                src="src/assets/images/threads-primary.svg"
+                alt="Threads"
+                className="h-6 w-6 cursor-pointer"
+              />
+            </ExternalLink>
+            <ExternalLink url={socialLinks.facebook}>
+              <img
+                src="src/assets/images/facebook-primary.svg"
+                alt="Facebook"
+                className="h-6 w-6 cursor-pointer"
+              />
+            </ExternalLink>
+            <ExternalLink url={socialLinks.linkedin}>
+              <img
+                src="src/assets/images/linkedin-primary.svg"
+                alt="LinkedIn"
+                className="h-6 w-6 cursor-pointer"
+              />
+            </ExternalLink>
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

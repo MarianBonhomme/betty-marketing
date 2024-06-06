@@ -1,14 +1,17 @@
 import React from "react";
-import Title from "./Title";
+import ExternalLink from "./ExternalLink";
+import { companiesLinks } from "../utils/CompaniesLinks";
 
 export default function Companies() {
   return (
-    <div className="px-20 py-10 flex items-center justify-center gap-10 shadow-md">
-      <img
-        src="src/assets/images/golf.png"
-        alt="Golf de la Gardiole"
-        className="h-24 w-24"
-      />
+    <div className="px-20 py-10 flex items-center justify-center gap-20 shadow-md">
+      <ExternalLink url={companiesLinks.golf}>
+        <img
+          src="src/assets/images/golf.png"
+          alt="Golf de la Gardiole"
+          className="h-24 w-24"
+        />
+      </ExternalLink>
       <img
         src="src/assets/images/tpms.jpg"
         alt="Travaux Publics Maintenance Service"
