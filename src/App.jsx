@@ -1,3 +1,15 @@
+import About from "./components/About";
+import Benefits from "./components/Benefits";
+import Headline from "./components/Headline";
+import Sidebar from "./components/Sidebar";
+
 export default function App() {
-  return <h1 className="p-4 text-7xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="max-w-screen font-bodoni text-dark">
+      <Sidebar />
+      <Headline />
+      <Benefits />
+      <About />
+    </div>
+  );
 }
