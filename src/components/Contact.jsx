@@ -37,7 +37,7 @@ export default function Contact() {
             totam, fugiat est voluptates?
           </Text>
           <form onSubmit={handleSubmit} className='grid gap-5'>
-            <div className='grid grid-cols-2 gap-5'>
+            <div className='grid grid-cols-2 gap-10'>
               <div className='grid'>
                 <input
                   placeholder='Nom complet'
@@ -86,29 +86,29 @@ export default function Contact() {
                 className='bg-transparent border-b-2 border-primary bg-light py-1 placeholder:text-primary outline-none'
               ></textarea>
             </div>
-            <button type="submit">
+            <button type="submit" className='mt-2'>
               <Button text={'Envoyer'} css={'bg-secondary text-sm'} />
             </button>
           </form>
         </div>
       </div>
-      <div className="w-1/3 bg-primary flex flex-col justify-center gap-5 text-white shadow-card p-20">
-        <h2 className='uppercase text-3xl'>infos</h2>
+      <div className="w-1/3 bg-light flex flex-col justify-center gap-5 p-20 font-bold">
+        <h2 className='uppercase text-3xl text-primary'>infos</h2>
         <div className="flex items-center gap-5">
           <img src="src/assets/images/phone.png" alt="Téléphone" className='w-6 h-6' />
-          <p className='text-xl'>{contact.phone}</p>
+          <p className='text-lg'>{contact.phone}</p>
         </div>
         <div className="flex items-center gap-5">
           <img src="src/assets/images/email.png" alt="Email" className='w-6 h-6' />
-          <p className='text-xl'>{contact.email}</p>
+          <p className='text-lg'>{contact.email}</p>
         </div>
         <div className="flex items-center gap-5">
           <img src="src/assets/images/company.png" alt="Entreprise" className='w-6 h-6' />
-          <p className='text-xl'>{contact.company}</p>
+          <p className='text-lg'>{contact.company}</p>
         </div>
         <div className="flex items-center gap-5">
           <img src="src/assets/images/pin.png" alt="Localisation" className='w-6 h-6' />
-          <p className='text-xl'>{contact.localisation}</p>
+          <p className='text-lg'>{contact.localisation}</p>
         </div>
       </div>
     </section>

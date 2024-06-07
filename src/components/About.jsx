@@ -1,8 +1,8 @@
 import React from "react";
 import Text from "./Text";
 import Button from "./Button";
-import { socialLinks } from "../utils/SocialLinks";
 import ExternalLink from "./ExternalLink";
+import { socialLinks } from "../utils/Links";
 
 export default function About() {
   return (

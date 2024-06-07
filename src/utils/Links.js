@@ -1,3 +1,7 @@
+export const companiesLinks = {
+  golf: 'https://golfdelagardiole.com/',
+}
+
 export const socialLinks = {
   instagram: 'https://www.instagram.com/betty_marketing_digital/',
   threads: 'https://www.threads.net/@betty_marketing_digital',

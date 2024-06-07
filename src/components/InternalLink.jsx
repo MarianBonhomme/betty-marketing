@@ -5,7 +5,7 @@ export default function InternalLink({ children, section }) {
 
   const scrollToSection = () => {
     scroller.scrollTo(`${section}`, {
-      duration: 800,
+      duration: 1000,
       smooth: 'easeOutQuint',
       offset: -100,
     });
