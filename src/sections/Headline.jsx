@@ -7,7 +7,7 @@ import InternalLink from "../components/InternalLink";
 export default function Headline() {
   return (
     <section id="headline">
-      <div className="max-w-responsive mx-auto grid grid-cols-2 items-center gap-10 p-20">
+      <div className="max-w-responsive mx-auto grid sm:grid-cols-2 items-center gap-10 py-20 px-10 sm:p-20">
         <div className="flex flex-col gap-5">
           <Title>développons ensemble votre succès en ligne</Title>
           <Text>
@@ -20,7 +20,7 @@ export default function Headline() {
             <Button text={"en savoir plus"} css={"bg-secondary mt-2"} />
           </InternalLink>
         </div>
-        <div className="h-[400px] w-full border border-dark"></div>
+        <div className="max-sm:hidden h-[400px] w-full border border-dark"></div>
       </div>
     </section>
   );

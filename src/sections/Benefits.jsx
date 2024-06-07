@@ -4,7 +4,7 @@ import Text from "../components/Text";
 export default function Benefits() {
   return (
     <section id="benefits" className="bg-light">
-      <div className="max-w-responsive mx-auto grid grid-cols-3 items-start gap-10 p-20">
+      <div className="max-w-responsive mx-auto overflow-x-scroll hide-scrollbar grid sm:grid-cols-3 items-start gap-20 sm:gap-10 px-10 py-20 sm:p-20">
         <div className="grid text-center">
           <img
             src="assets/images/certified.png"

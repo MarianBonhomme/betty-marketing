@@ -4,12 +4,16 @@ import Logo from "../components/Logo";
 import ExternalLink from "../components/ExternalLink";
 import InternalLink from "../components/InternalLink";
 import { socialLinks } from "../utils/Links";
+import { useMobileMenu } from "../utils/MobileMenuContext";
+import { Cross as Hamburger } from "hamburger-react";
 
 export default function Header() {
+  const { isMenuVisible, setIsMenuVisible } = useMobileMenu();
+
   return (
-    <nav className="fixed z-50 w-full bg-light shadow-md">
-      <div className="max-w-responsive mx-auto grid select-none grid-cols-3 px-20 py-3 uppercase">
-        <ul className="flex items-center gap-5 font-bold">
+    <nav className="fixed z-50 w-screen bg-light shadow-md">
+      <div className="max-w-responsive mx-auto grid select-none px-20 py-3 uppercase sm:grid-cols-3">
+        <ul className="flex items-center gap-5 font-bold max-sm:hidden">
           <li>
             <InternalLink section={"benefits"}>a propos</InternalLink>
           </li>
@@ -23,7 +27,7 @@ export default function Header() {
         <h1 className="grid text-center tracking-widest">
           <Logo />
         </h1>
-        <ul className="flex items-center justify-end gap-5">
+        <ul className="flex items-center justify-end gap-5 max-sm:hidden">
           <ExternalLink url={socialLinks.instagram}>
             <img
               src="assets/images/instagram.svg"
@@ -56,6 +60,16 @@ export default function Header() {
             <Button text={"contact"} css={"bg-secondary ml-10"} />
           </InternalLink>
         </ul>
+        <div className="absolute right-2 top-1/2 flex items-center justify-center -translate-y-1/2 sm:hidden">
+          <Hamburger
+            toggled={isMenuVisible}
+            toggle={() => setIsMenuVisible(!isMenuVisible)}
+            size={25}
+            color="#5B5B5B"
+            label="Ouvrir le menu" 
+            direction="right"
+          />
+        </div>
       </div>
     </nav>
   );

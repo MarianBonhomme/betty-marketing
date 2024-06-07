@@ -1,18 +1,22 @@
-import React from "react";
-import ExternalLink from "../components/ExternalLink";
-import { companiesLinks } from "../utils/Links";
+import React, { useRef } from "react";
+import { useDraggable } from "react-use-draggable-scroll";
 
 export default function Companies() {
+  const ref = useRef();
+  const { events } = useDraggable(ref);
+
   return (
     <section id="companies">
-      <div className="max-w-responsive mx-auto flex select-none items-center justify-center gap-20 px-20 py-10 shadow-md">
-        <ExternalLink url={companiesLinks.golf}>
-          <img
-            src="assets/images/golf.png"
-            alt="Golf de la Gardiole"
-            className="h-24 w-24"
-          />
-        </ExternalLink>
+      <div
+        className="max-w-responsive mx-auto flex select-none items-center justify-start overflow-x-auto shadow-md p-10 gap-10 sm:gap-20 sm:px-20 sm:py-10"
+        {...events}
+        ref={ref}
+      >
+        <img
+          src="assets/images/golf.png"
+          alt="Golf de la Gardiole"
+          className="h-24 w-24"
+        />
         <img
           src="assets/images/tpms.jpg"
           alt="Travaux Publics Maintenance Service"

@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './index.css'
+import './index.scss'
+import { MobileMenuProvider } from './utils/MobileMenuContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <MobileMenuProvider>
+      <App />
+    </MobileMenuProvider>   
   </React.StrictMode>,
 )
