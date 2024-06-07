@@ -22,7 +22,7 @@ export default function ScrollUpButton() {
     <div className={`fixed bottom-10 right-10 z-50 shadow-card select-none transition ${isVisible ? 'cursor-pointer' : 'opacity-0 pointer-events-none'}`}>
       <ScrollToTop>
         <div className='p-3 bg-secondary flex items-center justify-center'>
-          <img src="src/assets/images/arrow-up.png" alt="Retour en haut" className='w-5 h-5' />
+          <img src="assets/images/arrow-up.png" alt="Retour en haut" className='w-5 h-5' />
         </div>
       </ScrollToTop>
     </div>

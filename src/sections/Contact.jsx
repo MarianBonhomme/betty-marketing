@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Title from './Title';
-import Text from './Text';
-import Button from './Button';
+import Title from '../components/Title';
+import Text from '../components/Text';
+import Button from '../components/Button';
 import { contact } from '../utils/Contact';
 
 export default function Contact() {
@@ -95,19 +95,19 @@ export default function Contact() {
       <div className="w-1/3 bg-light flex flex-col justify-center gap-5 p-20 font-bold">
         <h2 className='uppercase text-3xl text-primary'>infos</h2>
         <div className="flex items-center gap-5">
-          <img src="src/assets/images/phone.png" alt="Téléphone" className='w-6 h-6' />
+          <img src="assets/images/phone.png" alt="Téléphone" className='w-6 h-6 select-none' />
           <p className='text-lg'>{contact.phone}</p>
         </div>
         <div className="flex items-center gap-5">
-          <img src="src/assets/images/email.png" alt="Email" className='w-6 h-6' />
+          <img src="assets/images/email.png" alt="Email" className='w-6 h-6 select-none' />
           <p className='text-lg'>{contact.email}</p>
         </div>
         <div className="flex items-center gap-5">
-          <img src="src/assets/images/company.png" alt="Entreprise" className='w-6 h-6' />
+          <img src="assets/images/company.png" alt="Entreprise" className='w-6 h-6 select-none' />
           <p className='text-lg'>{contact.company}</p>
         </div>
         <div className="flex items-center gap-5">
-          <img src="src/assets/images/pin.png" alt="Localisation" className='w-6 h-6' />
+          <img src="assets/images/pin.png" alt="Localisation" className='w-6 h-6 select-none' />
           <p className='text-lg'>{contact.localisation}</p>
         </div>
       </div>
