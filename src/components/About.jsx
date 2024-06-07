@@ -7,8 +7,8 @@ import ExternalLink from "./ExternalLink";
 export default function About() {
   return (
     <section id="about" className="flex items-center justify-center gap-20 bg-black p-20 shadow-2xl">
-      <div className="flex h-[375px] w-[375px] items-center justify-center relative">
-        <img src="src/assets/images/ornements-2.png" alt="ornements" className="absolute top-0 left-0 w-full h-full " />
+      <div className="flex h-[350px] w-[350px] items-center justify-center relative">
+        <img src="src/assets/images/cadre.svg" alt="décoration cadre ornement" className="absolute top-0 left-0 w-full h-full " />
         <div className="h-[250px] w-[200px] -rotate-3 bg-white pt-[15px]">
           <img
             src="src/assets/images/btissam.jpg"
