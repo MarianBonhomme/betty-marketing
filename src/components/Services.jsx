@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "./Title";
 import Text from "./Text";
+import Button from "./Button";
 
 export default function Services() {
   const cmServices = [
@@ -105,7 +106,7 @@ export default function Services() {
       </div>
       <div className="grid grid-cols-4 gap-10">
         <div className="relative flex items-center">
-          <h3 className="text-3xl font-bold uppercase italic text-primary">
+          <h3 className="text-3xl font-bold uppercase italic text-secondary">
             Community Management
           </h3>
           <img
@@ -119,7 +120,7 @@ export default function Services() {
             <img
               src={`src/assets/images/${service.image}`}
               alt={service.title}
-              className="h-10 w-10 select-none self-center"
+              className="h-10 w-10 select-"
             />
             <div>
               <h3 className="mb-2 text-lg/5 font-bold uppercase text-secondary">
@@ -128,15 +129,19 @@ export default function Services() {
               <Text>{service.description}</Text>
             </div>
             <span className="absolute bottom-0 right-0 flex h-7 w-10 select-none items-end justify-center bg-primary text-xl text-white">
-              {`${(index + 1).toString().padStart(2, '0')}.`}
+              {`${(index + 1).toString().padStart(2, "0")}.`}
             </span>
           </Card>
         ))}
       </div>
-      <div className="h-[2px] w-20 block mx-auto my-16 bg-light"></div>
+      <Button
+        text={"Booste ta présence en ligne"}
+        css={"bg-secondary text-black font-bold text-sm mt-10 mx-auto"}
+      ></Button>
+      <div className="mx-auto my-16 block h-[2px] w-20 bg-light"></div>
       <div className="grid grid-cols-4 gap-10">
         <div className="relative flex items-center">
-          <h3 className="text-3xl font-bold uppercase italic text-primary">
+          <h3 className="text-3xl font-bold uppercase italic text-secondary">
             Graphisme<br></br>Photos
           </h3>
           <img
@@ -150,7 +155,7 @@ export default function Services() {
             <img
               src={`src/assets/images/${service.image}`}
               alt={service.title}
-              className="h-10 w-10 select-none self-center"
+              className="h-10 w-10 select-none"
             />
             <div>
               <h3 className="mb-2 text-lg/5 font-bold uppercase text-secondary">
@@ -159,17 +164,21 @@ export default function Services() {
               <Text>{service.description}</Text>
             </div>
             <span className="absolute bottom-0 right-0 flex h-7 w-10 select-none items-end justify-center bg-primary text-xl text-white">
-              {`${(index + 1).toString().padStart(2, '0')}.`}
+              {`${(index + 1).toString().padStart(2, "0")}.`}
             </span>
           </Card>
         ))}
       </div>
+      <Button
+        text={"Transforme ton image dès maintenant!"}
+        css={"bg-secondary text-black font-bold text-sm mt-10 mx-auto"}
+      ></Button>
     </section>
   );
 }
 
 function Card({ children }) {
   return (
-    <div className="shadow-card relative flex gap-6 p-6 pr-12">{children}</div>
+    <div className="shadow-card relative flex items-center gap-5 p-5 pb-8">{children}</div>
   );
 }
