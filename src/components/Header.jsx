@@ -8,12 +8,14 @@ import ScrollToTop from "./ScrollToTop";
 
 export default function Header() {
   return (
-    <div className="bg-light fixed grid w-full select-none grid-cols-3 px-20 py-3 uppercase text-dark shadow-md">
+    <div className="bg-light fixed grid w-full select-none grid-cols-3 px-20 py-3 uppercase text-dark shadow-md z-50">
       <ul className="flex items-center gap-5 font-bold">
         <li>
           <InternalLink section={"benefits"}>a propos</InternalLink>
         </li>
-        <li>Services</li>
+        <li>
+          <InternalLink section={"services"}>services</InternalLink>
+        </li>
         <li>
           <InternalLink section={"about"}>Qui suis-je?</InternalLink>
         </li>
@@ -52,7 +54,7 @@ export default function Header() {
             className="h-6 w-6 cursor-pointer"
           />
         </ExternalLink>
-        <Button text={"contact"} css={"ml-10"} />
+        <Button text={"contact"} css={"bg-secondary ml-10"} />
       </ul>
     </div>
   );
