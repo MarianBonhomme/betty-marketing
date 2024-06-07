@@ -4,6 +4,7 @@ import Headline from "./components/Headline";
 import Header from "./components/Header";
 import Services from "./components/Services";
 import Companies from "./components/Companies";
+import Contact from "./components/Contact";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Companies />
         <Services />
         <About />
+        <Contact />
       </div>
     </div>
   );

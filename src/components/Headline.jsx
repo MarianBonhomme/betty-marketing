@@ -2,10 +2,14 @@ import React from "react";
 import Button from "./Button";
 import Title from "./Title";
 import Text from "./Text";
+import InternalLink from "./InternalLink";
 
 export default function Headline() {
   return (
-    <div className="grid grid-cols-2 items-center gap-10 p-20">
+    <section
+      id="headline"
+      className="grid grid-cols-2 items-center gap-10 p-20"
+    >
       <div className="flex flex-col gap-5">
         <Title>développons ensemble votre succès en ligne</Title>
         <Text>
@@ -14,9 +18,11 @@ export default function Headline() {
           deleniti possimus deserunt veritatis earum natus reprehenderit aliquam
           totam, fugiat est voluptates?
         </Text>
-        <Button text={"en savoir plus"} css={"bg-secondary mt-2"} />
+        <InternalLink section={"services"}>
+          <Button text={"en savoir plus"} css={"bg-secondary mt-2"} />
+        </InternalLink>
       </div>
       <div className="h-[400px] w-full border border-dark"></div>
-    </div>
+    </section>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Title from "./Title";
 import Text from "./Text";
 import Button from "./Button";
+import InternalLink from "./InternalLink";
 
 export default function Services() {
   const cmServices = [
@@ -134,15 +135,17 @@ export default function Services() {
           </Card>
         ))}
       </div>
-      <Button
-        text={"Booste ta présence en ligne"}
-        css={"bg-secondary text-black font-bold text-sm mt-10 mx-auto"}
-      ></Button>
-      <div className="mx-auto my-16 block h-[2px] w-20 bg-light"></div>
+      <InternalLink section={'contact'}>
+        <Button
+          text={"Booste ta présence en ligne"}
+          css={"bg-secondary text-black font-bold text-sm mt-10 mx-auto"}
+        ></Button>
+      </InternalLink>
+      <div className="mx-auto my-16 block h-[2px] w-10 bg-light select-none"></div>
       <div className="grid grid-cols-4 gap-10">
         <div className="relative flex items-center">
           <h3 className="text-3xl font-bold uppercase italic text-secondary">
-            Graphisme<br></br>Photos
+            Graphisme /<br></br>Photos
           </h3>
           <img
             src="src/assets/images/ornement-3.svg"
@@ -169,10 +172,12 @@ export default function Services() {
           </Card>
         ))}
       </div>
-      <Button
-        text={"Transforme ton image dès maintenant!"}
-        css={"bg-secondary text-black font-bold text-sm mt-10 mx-auto"}
-      ></Button>
+      <InternalLink section={'contact'}>
+        <Button
+          text={"Transforme ton image dès maintenant!"}
+          css={"bg-secondary text-black font-bold text-sm mt-10 mx-auto"}
+        ></Button>
+      </InternalLink>
     </section>
   );
 }
