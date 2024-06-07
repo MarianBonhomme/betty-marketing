@@ -15,7 +15,7 @@ export default function About() {
             alt="décoration cadre ornement"
             className="absolute left-0 top-0 h-full w-full"
           />
-          <div className="h-[250px] w-[200px] -rotate-3 bg-white pt-[15px]">
+          <div className="h-[250px] w-[200px] bg-white pt-[15px]" data-aos="zoom-out-up" data-aos-offset="400">
             <img
               src="assets/images/btissam.jpg"
               alt="Btissam"
@@ -52,34 +52,42 @@ export default function About() {
               />
             </InternalLink>
             <ul className="flex select-none items-center gap-5 max-sm:mt-8 sm:justify-end">
-              <ExternalLink url={socialLinks.instagram}>
-                <img
-                  src="assets/images/instagram-primary.svg"
-                  alt="Instagram"
-                  className="h-8 w-8 cursor-pointer sm:h-6 sm:w-6"
-                />
-              </ExternalLink>
-              <ExternalLink url={socialLinks.threads}>
-                <img
-                  src="assets/images/threads-primary.svg"
-                  alt="Threads"
-                  className="h-8 w-8 cursor-pointer sm:h-6 sm:w-6"
-                />
-              </ExternalLink>
-              <ExternalLink url={socialLinks.facebook}>
-                <img
-                  src="assets/images/facebook-primary.svg"
-                  alt="Facebook"
-                  className="h-8 w-8 cursor-pointer sm:h-6 sm:w-6"
-                />
-              </ExternalLink>
-              <ExternalLink url={socialLinks.linkedin}>
-                <img
-                  src="assets/images/linkedin-primary.svg"
-                  alt="LinkedIn"
-                  className="h-8 w-8 cursor-pointer sm:h-6 sm:w-6"
-                />
-              </ExternalLink>
+              <div data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out-back" data-aos-anchor-placement="top">
+                <ExternalLink url={socialLinks.instagram}>
+                  <img
+                    src="assets/images/instagram-primary.svg"
+                    alt="Instagram"
+                    className="h-8 w-8 cursor-pointer sm:h-6 sm:w-6"
+                  />
+                </ExternalLink>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-out-back" data-aos-anchor-placement="top">
+                <ExternalLink url={socialLinks.threads}>
+                  <img
+                    src="assets/images/threads-primary.svg"
+                    alt="Threads"
+                    className="h-8 w-8 cursor-pointer sm:h-6 sm:w-6"
+                  />
+                </ExternalLink>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-out-back" data-aos-anchor-placement="top">
+                <ExternalLink url={socialLinks.facebook}>
+                  <img
+                    src="assets/images/facebook-primary.svg"
+                    alt="Facebook"
+                    className="h-8 w-8 cursor-pointer sm:h-6 sm:w-6"
+                  />
+                </ExternalLink>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-out-back" data-aos-anchor-placement="top">
+                <ExternalLink url={socialLinks.linkedin}>
+                  <img
+                    src="assets/images/linkedin-primary.svg"
+                    alt="LinkedIn"
+                    className="h-8 w-8 cursor-pointer sm:h-6 sm:w-6"
+                  />
+                </ExternalLink>
+              </div>
             </ul>
           </div>
         </div>

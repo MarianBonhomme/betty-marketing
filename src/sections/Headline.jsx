@@ -20,7 +20,7 @@ export default function Headline() {
             <Button text={"en savoir plus"} css={"bg-secondary mt-2"} />
           </InternalLink>
         </div>
-        <div className="max-sm:hidden h-[400px] w-full border border-dark"></div>
+        <div className="max-sm:hidden h-[400px] w-full border border-dark" data-aos="fade-left"></div>
       </div>
     </section>
   );

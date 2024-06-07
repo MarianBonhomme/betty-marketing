@@ -8,7 +8,7 @@ export default function Companies() {
   return (
     <section id="companies">
       <div
-        className="max-w-responsive mx-auto flex select-none items-center justify-start overflow-x-auto shadow-md p-10 gap-10 sm:gap-20 sm:px-20 sm:py-10"
+        className="max-w-responsive mx-auto flex select-none items-center sm:justify-center overflow-x-auto shadow-md p-10 gap-10 sm:gap-20 sm:px-20 sm:py-10"
         {...events}
         ref={ref}
       >

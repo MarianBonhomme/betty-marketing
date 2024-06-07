@@ -17,6 +17,8 @@ export default function Services() {
             src="assets/images/ornement.svg"
             alt="décoration"
             className="mx-auto h-40"
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
           />
         </div>
         <div className="grid gap-5 sm:grid-cols-4 sm:gap-10">
@@ -28,6 +30,9 @@ export default function Services() {
               src="assets/images/ornement-3.svg"
               alt="décoration"
               className="absolute bottom-0 right-0 h-16 sm:h-20 select-none"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-anchor-placement="center-center"
             />
           </div>
           {cmServices.map((service, index) => (
@@ -67,6 +72,9 @@ export default function Services() {
               src="assets/images/ornement-3.svg"
               alt="décoration"
               className="absolute bottom-0 right-0 h-16 sm:h-20 select-none"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-anchor-placement="center-center"
             />
           </div>
           {photoServices.map((service, index) => (

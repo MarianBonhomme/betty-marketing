@@ -1,11 +1,14 @@
 import React from "react";
 import Text from "../components/Text";
+import { useMobileMenu } from "../utils/MobileMenuContext";
 
 export default function Benefits() {
+  const { isMobile } = useMobileMenu();
+
   return (
     <section id="benefits" className="bg-light">
       <div className="max-w-responsive mx-auto overflow-x-scroll hide-scrollbar grid sm:grid-cols-3 items-start gap-20 sm:gap-10 px-10 py-20 sm:p-20">
-        <div className="grid text-center">
+        <div className="grid text-center disable-animation" data-aos={isMobile ? 'fade-right' : null}>
           <img
             src="assets/images/certified.png"
             alt="expertise sur mesure"
@@ -17,7 +20,7 @@ export default function Benefits() {
             prends en compte tes objectifs pour une visibilité optimale.
           </Text>
         </div>
-        <div className="grid text-center">
+        <div className="grid text-center disable-animation" data-aos={isMobile ? 'fade-left' : null}>
           <img
             src="assets/images/chrono.png"
             alt="temps"
@@ -30,7 +33,7 @@ export default function Benefits() {
             activité.
           </Text>
         </div>
-        <div className="grid text-center">
+        <div className="grid text-center disable-animation" data-aos={isMobile ? 'fade-right' : null}>
           <img
             src="assets/images/analytic.png"
             alt="analyse et optimisation"

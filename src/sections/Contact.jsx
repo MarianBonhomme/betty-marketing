@@ -50,7 +50,7 @@ export default function Contact() {
                   value={formData.fullname}
                   onChange={handleChange}
                   required
-                  className="border-b-2 border-primary bg-light bg-transparent py-1 outline-none placeholder:text-primary"
+                  className="border-b-2 border-primary bg-light bg-transparent py-1 outline-none placeholder:text-primary rounded-none"
                 />
               </div>
               <div className="grid">
@@ -61,7 +61,7 @@ export default function Contact() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="border-b-2 border-primary bg-light bg-transparent py-1 outline-none placeholder:text-primary"
+                  className="border-b-2 border-primary bg-light bg-transparent py-1 outline-none placeholder:text-primary rounded-none"
                 />
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="border-b-2 border-primary bg-light bg-transparent py-1 outline-none placeholder:text-primary"
+                className="border-b-2 border-primary bg-light bg-transparent py-1 outline-none placeholder:text-primary rounded-none"
               />
             </div>
             <div className="grid">
@@ -86,7 +86,7 @@ export default function Contact() {
                 onChange={handleChange}
                 rows={1}
                 required
-                className="border-b-2 border-primary bg-light bg-transparent py-1 outline-none placeholder:text-primary"
+                className="border-b-2 border-primary bg-light bg-transparent py-1 outline-none placeholder:text-primary rounded-none"
               ></textarea>
             </div>
             <button type="submit" className="mt-2">
@@ -97,7 +97,7 @@ export default function Contact() {
       </div>
       <div className="flex flex-col justify-center gap-5 bg-light p-10 sm:p-20 font-bold sm:w-1/3">
         <h2 className="text-3xl uppercase text-primary">infos</h2>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5" data-aos="fade-left" data-aos-easing="ease-out" data-aos-delay="0">
           <img
             src="assets/images/phone.png"
             alt="Téléphone"
@@ -105,7 +105,7 @@ export default function Contact() {
           />
           <p className="text-lg">{contact.phone}</p>
         </div>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5" data-aos="fade-left" data-aos-easing="ease-out" data-aos-delay="100">
           <img
             src="assets/images/email.png"
             alt="Email"
@@ -113,7 +113,7 @@ export default function Contact() {
           />
           <p className="text-lg">{contact.email}</p>
         </div>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5" data-aos="fade-left" data-aos-easing="ease-out" data-aos-delay="200">
           <img
             src="assets/images/company.png"
             alt="Entreprise"
@@ -121,7 +121,7 @@ export default function Contact() {
           />
           <p className="text-lg">{contact.company}</p>
         </div>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5" data-aos="fade-left" data-aos-easing="ease-out" data-aos-delay="300">
           <img
             src="assets/images/pin.png"
             alt="Localisation"

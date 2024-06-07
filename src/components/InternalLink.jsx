@@ -15,7 +15,7 @@ export default function InternalLink({ children, section }) {
   }
 
   return (
-    <a onClick={scrollToSection} className='cursor-pointer'>
+    <a onClick={scrollToSection} className='cursor-pointer max-w-fit'>
       {children}
     </a>
   )
